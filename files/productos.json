@@ -1,0 +1,92 @@
+[
+	{
+		"title": "Goma",
+		"description": "Gris",
+		"price": 20,
+		"thumbnail": "no img",
+		"code": "ab146",
+		"stock": 40,
+		"id": 1
+	},
+	{
+		"title": "Lapicera",
+		"description": "Azul",
+		"price": 10,
+		"thumbnail": "no img",
+		"code": "ab147",
+		"stock": 100,
+		"id": 2
+	},
+	{
+		"title": "Plasticola",
+		"description": "Transparente",
+		"price": 80,
+		"thumbnail": "no img",
+		"code": "ab148",
+		"stock": 37,
+		"id": 3
+	},
+	{
+		"title": "Fibron",
+		"description": "Rojo",
+		"price": 50,
+		"thumbnail": "no img",
+		"code": "ab149",
+		"stock": 47,
+		"id": 4
+	},
+	{
+		"title": "Lapiz",
+		"description": "Amarillo",
+		"price": 25,
+		"thumbnail": "no img",
+		"code": "ab150",
+		"stock": 28,
+		"id": 5
+	},
+	{
+		"title": "Lapiz",
+		"description": "Azul",
+		"price": 25,
+		"thumbnail": "no img",
+		"code": "ab151",
+		"stock": 16,
+		"id": 6
+	},
+	{
+		"title": "Sacapuntas",
+		"description": "Naranja",
+		"price": 35,
+		"thumbnail": "no img",
+		"code": "ab152",
+		"stock": 38,
+		"id": 7
+	},
+	{
+		"title": "Tijera",
+		"description": "Verde",
+		"price": 55,
+		"thumbnail": "no img",
+		"code": "ab153",
+		"stock": 53,
+		"id": 8
+	},
+	{
+		"title": "Carpeta",
+		"description": "Disney",
+		"price": 100,
+		"thumbnail": "no img",
+		"code": "ab154",
+		"stock": 12,
+		"id": 9
+	},
+	{
+		"title": "Resaltador",
+		"description": "Rosa",
+		"price": 83,
+		"thumbnail": "no img",
+		"code": "ab155",
+		"stock": 23,
+		"id": 10
+	}
+]
