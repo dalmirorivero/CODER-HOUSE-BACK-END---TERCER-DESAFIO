@@ -88,5 +88,14 @@
 		"code": "ab155",
 		"stock": 23,
 		"id": 10
+	},
+	{
+		"title": "Resaltador",
+		"description": "Amarillo",
+		"price": 83,
+		"thumbnail": "no img",
+		"code": "ab156",
+		"stock": 23,
+		"id": 11
 	}
 ]

@@ -1,4 +1,4 @@
-import ProductManager from "./products/productManager.js";
+import ProductManager from "./src/productManager.js";
 
 const manager = new ProductManager ('./files/productos.json');
 
@@ -6,10 +6,10 @@ const send = async () => {
     // CREA UN NUEVO PRODUCTO ALMACENADO EN EL ARREGLO
     const product = {
     title: 'Resaltador', 
-    description: 'Rosa', 
+    description: 'Amarillo', 
     price: 83, 
     thumbnail: 'no img', 
-    code: 'ab155', 
+    code: 'ab156', 
     stock: 23
     };
     
