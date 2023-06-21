@@ -8,6 +8,8 @@ export default class ProductManager {
         this.products = [];
     }
 
+    // CREA UN NUEVO PRODUCTO, LE ASIGNA UN ID AUTOINCREMENTABLE Y LO ALMACENA DENTRO DE UN ARREGLO
+
     addProduct = async (product) => {
         try {
             const products = await this.getProducts();
@@ -35,6 +37,8 @@ export default class ProductManager {
         }
     }
 
+    // LEE EL ARCHIVO DE PRODUCTOS Y LOS DEVUELVE EN FORMATO DE ARREGLO
+
     getProducts = async () => {
         try {
             if (fs.existsSync(this.path)) {
@@ -49,6 +53,8 @@ export default class ProductManager {
         }
     }
 
+    // RECIBE UN ID Y DEVUELVE EL PRODUCTO SELECCIONA EN FORMATO DE ARREGLO
+
     async getProductById(ProductID) {
         const products = await this.getProducts();
         const productIndex = products.find(product => product.id === ProductID);
@@ -60,6 +66,7 @@ export default class ProductManager {
         return productIndex;
     }
 
+    // RECIBE UN ID Y UN PARAMETRO PARA ACTUALIZAR UN PRODUCTO DEL ARREGLO
 
     async updateProduct(productId, updatedFields) {
         const products = await this.getProducts();
@@ -83,6 +90,8 @@ export default class ProductManager {
         console.log(error);
         }
     }
+
+    // RECIBE UN ID PARA ELIMINAR UN PRODUCTO DEL ARREGLO
 
     deleteProductById = async (productId) => {
         try {
