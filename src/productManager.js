@@ -31,6 +31,7 @@ export default class ProductManager {
             products.push(product);
 
             await fs.promises.writeFile(this.path, JSON.stringify(products, null, '\t'))
+            console.log("Producto creado con exito!")
             return product;
         } catch (error) {
         console.log(error)
@@ -70,9 +71,9 @@ export default class ProductManager {
 
     async updateProduct(productId, updatedFields) {
         const products = await this.getProducts();
-        const productIndex = products.findIndex((product) => product.id === productId);
+        const productIndex = products.find((product) => product.id === productId);
 
-        if (productIndex === -1) {
+        if (!productIndex) {
             console.log("Producto a actualizar no encontrado!");
             return;
         }
@@ -96,9 +97,9 @@ export default class ProductManager {
     deleteProductById = async (productId) => {
         try {
             const products = await this.getProducts();
-            const productIndex = products.findIndex((product) => product.id === productId);
+            const productIndex = products.find((product) => product.id === productId);
 
-            if (productIndex === -1) {
+            if (!productIndex) {
                 console.log("Producto a eliminar no encontrado!");
                 return false;
             }
